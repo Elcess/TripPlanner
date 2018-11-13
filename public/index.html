@@ -5,11 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Trip Planner</title>
-    <link href='https://api.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.css' rel='stylesheet' />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <script src="bundle.js" defer></script>
   </head>
   <body>
+    <header>
+      <nav>
+        <span><a href="#">Home</a></span> <span><a href="#">About</a></span>
+        <span><a href="#">Contact</a></span>
+      </nav>
+    </header>
+    <div id="sidebar">
+      Hotels
+      <select>
+        <option value="hotel1">Hotel1</option>
+        <option value="hotel2">Hotel2</option>
+        <option value="hotel3">Hotel3</option>
+      </select>
+      Activities
+      <select>
+        <option value="activity1">Activity1</option>
+        <option value="activity2">Activity2</option>
+        <option value="activity3">Activity3</option>
+      </select>
+      Restaurants
+      <select>
+        <option value="restaurant1">Restaurant1</option>
+        <option value="restaurant2">Restaurant2</option>
+        <option value="restaurant3">Restaurant3</option>
+      </select>
+    </div>
     <div id="map"></div>
   </body>
 </html>

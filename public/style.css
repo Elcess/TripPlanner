@@ -6,9 +6,55 @@ body {
   margin: 0;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   background-color: #c1b5ad;
+  display: flex;
 }
 
 #map {
+  position: absolute;
+  top: 50px;
+  left: 0px;
   height: 100vh;
-  width: 100vw;
+  width: 70vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+header {
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 50px;
+  background-color: blueviolet;
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-items: center;
+}
+
+nav {
+  display: flex;
+  flex-flow: row nowrap;
+  color: whitesmoke;
+  margin: 5px;
+  padding: 5px;
+  justify-content: space-evenly;
+}
+
+nav :hover {
+  background-color: whitesmoke;
+  color: darkgray;
+}
+
+#sidebar {
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  display: flex;
+  background-color: coral;
+  height: 20vh;
+  width: 29vw;
+  flex-direction: column;
+  align-content: flex-end;
 }
